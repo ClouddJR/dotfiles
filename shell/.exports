@@ -1,0 +1,5 @@
+# Set the language
+export LANG=en_US.UTF-8
+
+# Enable colored 'grep' output
+export GREP_OPTIONS="--color=auto"
