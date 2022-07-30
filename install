@@ -99,9 +99,9 @@ echo 'Install android-studio'
 echo '----------------------'
 brew install --cask android-studio
 
-echo 'Install intellij-idea'
-echo '---------------------'
-brew install --cask intellij-idea
+echo 'Install intellij-idea-ce'
+echo '------------------------'
+brew install --cask intellij-idea-ce
 
 echo 'Install visual-studio-code'
 echo '--------------------------'
@@ -161,5 +161,5 @@ echo 'All done!'
 echo 'Additional things to do:'
 echo '1. Set some sensible OSX defaults by running: $HOME/.dotfiles/macos/set-defaults.sh.'
 echo '2. Install pyenv latest version by running pyenv install 3:latest and then pyenv global _version_.'
-echo '3. Install remaining applications listed in the apps.md.'
-echo '4. Load configs for IDEs and iTerm2 from /configs.'
+echo '3. Load configs for IDEs and iTerm2 from /configs.'
+echo '4. Optionally install remaining applications listed in the apps.md.'
