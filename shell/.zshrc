@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Load the shell dotfiles
 for file in ~/.dotfiles/shell/.{exports,aliases,functions}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+    [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
 # Active z
