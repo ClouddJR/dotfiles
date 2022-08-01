@@ -8,9 +8,16 @@ plugins=(git adb macos laravel)
 source $ZSH/oh-my-zsh.sh
 
 # Load the shell dotfiles
+# ~/.dotfiles-custom can be used for other settings you don’t want to commit.
 for file in ~/.dotfiles/shell/.{exports,aliases,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
+
+for file in ~/.dotfiles-custom/shell/.{exports,aliases,functions,zshrc,vimrc}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+
+unset file
 
 # Active z
 . $HOME/.dotfiles/shell/z.sh

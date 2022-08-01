@@ -6,7 +6,6 @@ touch $HOME/.hushlogin
 # Install oh-my-zsh
 echo 'Install oh-my-zsh'
 echo '-----------------'
-rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Symlink zsh prefs
@@ -24,7 +23,6 @@ chmod +x z.sh
 # Install Homebrew and some packages
 echo 'Install Homebrew'
 echo '----------------'
-sudo rm -rf /opt/homebrew/Cellar /usr/local/Cellar && brew cleanup
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -63,12 +61,16 @@ echo '------------'
 brew install wget
 
 echo 'Install tree'
-echo '-----------'
+echo '------------'
 brew install tree
 
 echo 'Install trash'
 echo '-------------'
 brew install trash
+
+echo 'Install imagemagick'
+echo '-------------------'
+brew install imagemagick
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
