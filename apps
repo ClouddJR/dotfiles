@@ -1,0 +1,92 @@
+#!bin/bash
+
+echo 'Install firefox'
+echo '---------------'
+brew install --cask firefox
+
+echo 'Install google-chrome'
+echo '---------------------'
+brew install --cask google-chrome
+
+echo 'Install rectangle'
+echo '-----------------'
+brew install --cask rectangle
+
+echo 'Install linearmouse'
+echo '-------------------'
+brew install --cask linearmouse
+
+echo 'Install iterm2'
+echo '--------------'
+brew install --cask iterm2
+
+echo 'Install alfred'
+echo '--------------'
+brew install --cask alfred
+
+echo 'Install android-studio'
+echo '----------------------'
+brew install --cask android-studio
+
+echo 'Install intellij-idea-ce'
+echo '------------------------'
+brew install --cask intellij-idea-ce
+
+echo 'Install visual-studio-code'
+echo '--------------------------'
+brew install --cask visual-studio-code
+
+echo 'Install bitwarden'
+echo '-----------------'
+brew install --cask bitwarden
+
+echo 'Install keka'
+echo '------------'
+brew install --cask keka
+
+echo 'Install iina'
+echo '------------'
+brew install --cask iina
+
+echo 'Install tableplus'
+echo '-----------------'
+brew install --cask tableplus
+
+echo 'Install folx'
+echo '------------'
+brew install --cask folx
+
+echo 'Install postman'
+echo '---------------'
+brew install --cask postman
+
+echo 'Install kap'
+echo '-----------'
+brew install --cask kap
+
+echo 'Install appcleaner'
+echo '------------------'
+brew install --cask appcleaner
+
+echo 'Install spotify'
+echo '---------------'
+brew install --cask spotify
+
+echo 'Install calibre'
+echo '---------------'
+brew install --cask calibre
+
+echo 'Install disk-inventory-x'
+echo '------------------------'
+brew install --cask disk-inventory-x
+
+echo 'Install imageoptim'
+echo '------------------'
+brew install --cask imageoptim
+
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'
+echo 'All done!'
+echo 'Additional things to do:'
+echo ' 1. Load configs for IDEs and iTerm2 from /configs'
+echo ' 2. Optionally install remaining applications listed in the apps.md'

@@ -1,15 +1,34 @@
 #!/bin/bash
 
-function bootstrap() {
-    sudo -v
-    source ~/.dotfiles/install
-}
+echo 'Bootstrap your Mac'
 
-echo 'Bootstrap terminal and install applications'
-echo '------------------'
-echo 'This will reset your terminal. Are you sure you want to do this? (y/n)'
-read -p 'Answer: ' reply
+while true
+do
+    echo '------------------'
+    echo 'Choose an option:'
+    echo ' 1. Bootstrap terminal'
+    echo ' 2. Install applications'
+    echo ' 3. Set system defaults (macOS)'
+    echo ' 0. Exit'
+    read -p 'Answer: ' reply
 
-if [[ $reply =~ ^[Yy]$  ]]; then
-    bootstrap
-fi
+    case $reply in
+        1)
+            sudo -v
+            source ~/.dotfiles/terminal
+            ;;
+        2)
+            source ~/.dotfiles/apps
+            ;;
+        3)
+            sudo -v
+            source ~/.dotfiles/defaults
+            ;;
+        0)
+            break
+            ;;
+        *)
+            echo 'Unknown option. Try again'
+            ;;
+    esac
+done

@@ -1,0 +1,77 @@
+#!bin/bash
+
+# Hide the "last login" line when starting a new terminal session
+touch $HOME/.hushlogin
+
+# Install oh-my-zsh
+echo 'Install oh-my-zsh'
+echo '-----------------'
+rm -rf $HOME/.oh-my-zsh
+curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Symlink zsh prefs
+rm $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+
+# Symlink vim prefs
+rm $HOME/.vimrc
+ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
+
+# Activate z
+cd ~/.dotfiles/shell
+chmod +x z.sh
+
+# Install Homebrew and some packages
+echo 'Install Homebrew'
+echo '----------------'
+sudo rm -rf /opt/homebrew/Cellar /usr/local/Cellar && brew cleanup
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+echo 'Install git'
+echo '-----------'
+brew install git
+
+echo 'Install pyenv'
+echo '-------------'
+brew install pyenv
+
+echo 'Install docker'
+echo '--------------'
+brew install docker
+
+echo 'Install php'
+echo '-----------'
+brew install php
+
+echo 'Install composer'
+echo '----------------'
+brew install composer
+
+echo 'Install node'
+echo '------------'
+brew install node
+
+echo 'Install mysql'
+echo '-------------'
+brew install mysql
+brew services start mysql
+
+echo 'Install wget'
+echo '------------'
+brew install wget
+
+echo 'Install tree'
+echo '-----------'
+brew install tree
+
+echo 'Install trash'
+echo '-------------'
+brew install trash
+
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'
+echo 'All done!'
+echo 'Additional things to do:'
+echo ' 1. Install pyenv latest version by running pyenv install _version_ and then pyenv global _version_'
