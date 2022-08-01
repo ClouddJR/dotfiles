@@ -24,8 +24,14 @@ chmod +x z.sh
 echo 'Install Homebrew'
 echo '----------------'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+echo 'Is this a Mac with Apple Silicon? (y/n)'
+read -p 'Answer: ' reply
+
+if [[ $reply =~ ^[Yy]$  ]]; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 echo 'Install git'
 echo '-----------'
