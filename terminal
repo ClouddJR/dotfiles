@@ -41,6 +41,11 @@ echo 'Install pyenv'
 echo '-------------'
 brew install pyenv
 
+echo 'Install java'
+echo '------------'
+brew install java
+sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 echo 'Install docker'
 echo '--------------'
 brew install docker
