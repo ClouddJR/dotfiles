@@ -13,7 +13,7 @@ for file in ~/.dotfiles/shell/.{exports,aliases,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
-for file in ~/.dotfiles-custom/shell/.{exports,aliases,functions,zshrc,vimrc}; do
+for file in ~/.dotfiles-custom/shell/.{exports,aliases,functions,zshrc}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
