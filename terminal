@@ -99,6 +99,38 @@ echo 'Install fd'
 echo '----------'
 brew install fd
 
+echo 'Install jq'
+echo '----------'
+brew install jq
+
+echo 'Install gh'
+echo '----------'
+brew install gh
+
+echo 'Install gradle'
+echo '--------------'
+brew install gradle
+
+echo 'Install hugo'
+echo '------------'
+brew install hugo
+
+echo 'Install kotlin'
+echo '--------------'
+brew install kotlin
+
+echo 'Install mailhog'
+echo '---------------'
+brew install mailhog
+
+echo 'Install mitmproxy'
+echo '-----------------'
+brew install mitmproxy
+
+echo 'Install neovim'
+echo '--------------'
+brew install neovim
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'

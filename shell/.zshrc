@@ -25,12 +25,7 @@ done
 
 unset file
 
-# Open the VS Code with a 'code' command
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
 # Setup pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Activate fzf

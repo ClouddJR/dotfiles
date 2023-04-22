@@ -4,6 +4,13 @@ export LANG=en_US.UTF-8
 # Enable colored 'grep' output
 export GREP_OPTIONS="--color=auto"
 
+# Setup pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Open the VS Code with a 'code' command
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Configuration for fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude .git"
 
