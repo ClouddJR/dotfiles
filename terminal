@@ -16,7 +16,7 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
-# Activate z
+# Add exec permission for z
 cd ~/.dotfiles/shell
 chmod +x z.sh
 
@@ -82,6 +82,22 @@ brew install trash
 echo 'Install imagemagick'
 echo '-------------------'
 brew install imagemagick
+
+echo 'Install fzf'
+echo '-----------'
+brew install fzf
+
+echo 'Install bat'
+echo '-----------'
+brew install bat
+
+echo 'Install ripgrep'
+echo '---------------'
+brew install ripgrep
+
+echo 'Install fd'
+echo '----------'
+brew install fd
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'

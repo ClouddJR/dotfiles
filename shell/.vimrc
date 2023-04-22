@@ -1,6 +1,6 @@
 syntax enable
 
-set number
+set number relativenumber
 
 filetype plugin indent on
 set expandtab

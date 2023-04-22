@@ -1,4 +1,4 @@
-#  Commit everything (with optional message)
+# Commit everything (with optional message)
 function commit() {
   message="$*"
 
@@ -14,3 +14,38 @@ function commit() {
 function ql() {
    quick-look "$1"
 }
+
+# 1. Search for text in files using ripgrep
+# 2. Interactively narrow down the list using fzf
+# 3. Open the file in nvim
+function rfv() {
+    rg --color=always --line-number --no-heading --smart-case "${*:-}" 2> /dev/null |
+      fzf --ansi \
+          --color "hl:-1:underline,hl+:-1:underline:reverse" \
+          --delimiter : \
+          --preview 'bat --color=always {1} --highlight-line {2}' \
+          --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+          --bind 'enter:become(nvim {1} +{2})'
+}
+
+# Search globally within the fzf file widget
+function fzf-global-file-widget() {
+    FZF_CTRL_T_COMMAND="fd . ~ --hidden --follow --exclude .git" fzf-file-widget
+}
+
+zle -N fzf-global-file-widget
+bindkey -M viins '^G^T' fzf-global-file-widget
+bindkey -M vicmd '^G^T' fzf-global-file-widget
+
+# Search globally within the fzf cd widget
+function fzf-global-cd-widget() {
+    FZF_ALT_C_COMMAND="fd . ~ --type directory --hidden --follow --exclude .git" fzf-cd-widget
+}
+
+zle -N fzf-global-cd-widget
+bindkey -M viins '^G^B' fzf-global-cd-widget
+bindkey -M vicmd '^G^B' fzf-global-cd-widget
+
+# Add binding for fzf cd widget
+bindkey -M viins '^B' fzf-cd-widget
+bindkey -M vicmd '^B' fzf-cd-widget

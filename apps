@@ -84,6 +84,10 @@ echo 'Install imageoptim'
 echo '------------------'
 brew install --cask imageoptim
 
+echo 'Install karabiner-elements'
+echo '--------------------------'
+brew install --cask karabiner-elements
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'

@@ -23,6 +23,7 @@
 * Calibre
 * Disk Inventory X
 * ImageOptim
+* Karabiner-Elements
 
 ### Optional (installed manually):
 
@@ -33,5 +34,4 @@
 * Obsidian
 * Tor Browser
 * Garmin Express
-* Karabiner-Elements
 * OBS

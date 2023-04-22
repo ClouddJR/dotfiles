@@ -4,7 +4,7 @@ echo 'Bootstrap your Mac'
 
 while true
 do
-    echo '------------------'
+    echo '-----------------'
     echo 'Choose an option:'
     echo ' 1. Bootstrap terminal'
     echo ' 2. Install applications'
