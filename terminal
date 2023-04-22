@@ -16,6 +16,10 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
+# Symlink karabiner config
+rm $HOME/.config/karabiner
+ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config
+
 # Add exec permission for z
 cd ~/.dotfiles/shell
 chmod +x z.sh
