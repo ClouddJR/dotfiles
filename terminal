@@ -20,6 +20,10 @@ ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 rm $HOME/.config/karabiner
 ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config
 
+# Symlink global fd ignore file
+mkdir -p $HOME/.config/fd/
+ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
+
 # Add exec permission for z
 cd ~/.dotfiles/shell
 chmod +x z.sh

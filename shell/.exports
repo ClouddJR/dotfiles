@@ -12,7 +12,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Configuration for fzf
-export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude .git"
+export FZF_DEFAULT_COMMAND="fd --hidden --follow"
 
 export FZF_DEFAULT_OPTS="--reverse --cycle"
 
@@ -29,7 +29,7 @@ export FZF_CTRL_R_OPTS="
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
-export FZF_ALT_C_COMMAND="fd --type directory --hidden --follow --exclude .git"
+export FZF_ALT_C_COMMAND="fd --type directory --hidden --follow"
 
 # Configuration for bat
 export BAT_THEME="Nord"

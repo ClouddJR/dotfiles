@@ -1,0 +1,11 @@
+# These will be ignored when using fd
+.git
+.composer
+.gem
+.npm
+.oh-my-zsh
+.swiftpm
+.gradle
+.pyenv
+.vscode
+Library

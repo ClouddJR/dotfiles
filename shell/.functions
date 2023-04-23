@@ -30,7 +30,7 @@ function rfv() {
 
 # Search globally within the fzf file widget
 function fzf-global-file-widget() {
-    FZF_CTRL_T_COMMAND="fd . ~ --hidden --follow --exclude .git" fzf-file-widget
+    FZF_CTRL_T_COMMAND="fd . ~ --hidden --follow" fzf-file-widget
 }
 
 zle -N fzf-global-file-widget
@@ -39,7 +39,7 @@ bindkey -M vicmd '^G^T' fzf-global-file-widget
 
 # Search globally within the fzf cd widget
 function fzf-global-cd-widget() {
-    FZF_ALT_C_COMMAND="fd . ~ --type directory --hidden --follow --exclude .git" fzf-cd-widget
+    FZF_ALT_C_COMMAND="fd . ~ --type directory --hidden --follow" fzf-cd-widget
 }
 
 zle -N fzf-global-cd-widget
