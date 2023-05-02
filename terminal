@@ -21,8 +21,14 @@ rm $HOME/.config/karabiner
 ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config
 
 # Symlink global fd ignore file
+rm $HOME/.config/fd/ignore
 mkdir -p $HOME/.config/fd/
 ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
+
+# Symlink yabai config
+rm $HOME/.config/yabai/yabairc
+mkdir -p $HOME/.config/yabai/
+ln -s $HOME/.dotfiles/configs/yabai/yabairc $HOME/.config/yabai/yabairc
 
 # Add exec permission for z
 cd ~/.dotfiles/shell
@@ -139,8 +145,13 @@ echo 'Install neovim'
 echo '--------------'
 brew install neovim
 
+echo 'Install yabai'
+echo '-------------'
+brew install koekeishiya/formulae/yabai
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
 echo 'Additional things to do:'
 echo ' 1. Install pyenv latest version by running pyenv install _version_ and then pyenv global _version_'
+echo ' 2. Start yabai with brew services start yabai'

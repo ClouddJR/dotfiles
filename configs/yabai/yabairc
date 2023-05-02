@@ -1,0 +1,19 @@
+# Binary Space Paritioning layout
+yabai -m config layout bsp
+
+# Set all padding and gaps to 8pt
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+# Keyboard modifier used for moving and resizing windows
+yabai -m config mouse_modifier ctrl
+
+# Disable these apps from being managed
+yabai -m rule --add app="^Ustawienia systemowe$" manage=off
+yabai -m rule --add app="^Kalkulator$" manage=off
+yabai -m rule --add app="^Kalendarz$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Podgląd$" manage=off

@@ -1,0 +1,1799 @@
+{
+	"title": "Yabai",
+	"rules": [
+		{
+			"description": "Mappings for f mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "h"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus west"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus west"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "j"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus south"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus south"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "k"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus north"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus north"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "l"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus east"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --focus east"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "y"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --mirror y-axis"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "y",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --mirror y-axis"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "f"
+							},
+							{
+								"key_code": "m"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "f-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "f-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "m",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen"
+						}
+					],
+					"conditions": [
+						{
+							"name": "f-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Mappings for s mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "s"
+							},
+							{
+								"key_code": "h"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "s-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "s-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap west"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap west"
+						}
+					],
+					"conditions": [
+						{
+							"name": "s-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "s"
+							},
+							{
+								"key_code": "j"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "s-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "s-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap south"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap south"
+						}
+					],
+					"conditions": [
+						{
+							"name": "s-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "s"
+							},
+							{
+								"key_code": "k"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "s-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "s-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap north"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap north"
+						}
+					],
+					"conditions": [
+						{
+							"name": "s-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "s"
+							},
+							{
+								"key_code": "l"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "s-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "s-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap east"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --swap east"
+						}
+					],
+					"conditions": [
+						{
+							"name": "s-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Mappings for a mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "a"
+							},
+							{
+								"key_code": "h"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "a-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "a-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp west"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp west"
+						}
+					],
+					"conditions": [
+						{
+							"name": "a-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "a"
+							},
+							{
+								"key_code": "j"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "a-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "a-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp south"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp south"
+						}
+					],
+					"conditions": [
+						{
+							"name": "a-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "a"
+							},
+							{
+								"key_code": "k"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "a-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "a-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp north"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp north"
+						}
+					],
+					"conditions": [
+						{
+							"name": "a-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "a"
+							},
+							{
+								"key_code": "l"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "a-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "a-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp east"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --warp east"
+						}
+					],
+					"conditions": [
+						{
+							"name": "a-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Mappings for d mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "d"
+							},
+							{
+								"key_code": "h"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "d-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "d-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m display --focus west"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m display --focus west"
+						}
+					],
+					"conditions": [
+						{
+							"name": "d-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "d"
+							},
+							{
+								"key_code": "l"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "d-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "d-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m display --focus east"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m display --focus east"
+						}
+					],
+					"conditions": [
+						{
+							"name": "d-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Mappings for w mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "w"
+							},
+							{
+								"key_code": "h"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "w-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "w-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --display west; /opt/homebrew/bin/yabai -m display --focus west"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --display west; /opt/homebrew/bin/yabai -m display --focus west"
+						}
+					],
+					"conditions": [
+						{
+							"name": "w-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "w"
+							},
+							{
+								"key_code": "l"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "w-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "w-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --display east; /opt/homebrew/bin/yabai -m display --focus east"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --display east; /opt/homebrew/bin/yabai -m display --focus east"
+						}
+					],
+					"conditions": [
+						{
+							"name": "w-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Mappings for m mode",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "r"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --rotate 270"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "r",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --rotate 270"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "x"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --mirror x-axis"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "x",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m space --mirror x-axis"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "t"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "t",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "1"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 1"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "1",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 1"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "2"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 2"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "2",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 2"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "3"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 3"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "3",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 3"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "4"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 4"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "4",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 4"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "5"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 5"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "5",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 5"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "6"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 6"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "6",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 6"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"simultaneous": [
+							{
+								"key_code": "m"
+							},
+							{
+								"key_code": "7"
+							}
+						],
+						"simultaneous_options": {
+							"key_down_order": "strict",
+							"key_up_order": "strict_inverse",
+							"key_up_when": "all",
+							"to_after_key_up": [
+								{
+									"set_variable": {
+										"name": "m-mode",
+										"value": 0
+									}
+								}
+							]
+						}
+					},
+					"to": [
+						{
+							"set_variable": {
+								"name": "m-mode",
+								"value": 1
+							}
+						},
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 7"
+						}
+					],
+					"parameters": {
+						"basic.simultaneous_threshold_milliseconds": 200
+					}
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "7",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"shell_command": "/opt/homebrew/bin/yabai -m window --space 7"
+						}
+					],
+					"conditions": [
+						{
+							"name": "m-mode",
+							"type": "variable_if",
+							"value": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}
