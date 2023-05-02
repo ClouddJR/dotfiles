@@ -34,13 +34,7 @@ echo 'Install Homebrew'
 echo '----------------'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo 'Is this a Mac with Apple Silicon? (y/n)'
-read -p 'Answer: ' reply
-
-if [[ $reply =~ ^[Yy]$  ]]; then
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo 'Install git'
 echo '-----------'

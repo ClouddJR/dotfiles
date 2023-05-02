@@ -65,7 +65,7 @@
                         ]
                     },
                     {
-                        "description": "Change left_control + h/j/k/l to arrows",
+                        "description": "Change left_control + h/j/k/l to arrows.",
                         "manipulators": [
                             {
                                 "from": {

@@ -7,6 +7,9 @@ plugins=(git gh adb macos laravel)
 
 source $ZSH/oh-my-zsh.sh
 
+# Required for Homebrew when using machines with Apple Silicon
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Active z
 . $HOME/.dotfiles/shell/z.sh
 
