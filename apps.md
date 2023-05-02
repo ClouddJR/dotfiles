@@ -7,7 +7,7 @@
 * Rectangle
 * LinearMouse
 * iTerm2
-* Alfred
+* Raycast
 * Android Studio
 * IntelliJ IDEA
 * Visual Studio Code

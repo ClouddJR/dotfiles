@@ -20,9 +20,9 @@ echo 'Install iterm2'
 echo '--------------'
 brew install --cask iterm2
 
-echo 'Install alfred'
-echo '--------------'
-brew install --cask alfred
+echo 'Install raycast'
+echo '---------------'
+brew install --cask raycast
 
 echo 'Install android-studio'
 echo '----------------------'

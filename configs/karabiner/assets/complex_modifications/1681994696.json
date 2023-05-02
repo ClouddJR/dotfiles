@@ -1,8 +1,8 @@
 {
-    "title": "Change left_control + h/j/k/l to arrows",
+    "title": "Change left_control + h/j/k/l to arrows.",
     "rules": [
         {
-            "description": "Change left_control + h/j/k/l to arrows",
+            "description": "Change left_control + h/j/k/l to arrows.",
             "manipulators": [
                 {
                     "type": "basic",
