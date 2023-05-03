@@ -4,8 +4,6 @@
 touch $HOME/.hushlogin
 
 # Install oh-my-zsh
-echo 'Install oh-my-zsh'
-echo '-----------------'
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Symlink zsh prefs
@@ -33,8 +31,6 @@ ln -s $HOME/.dotfiles/shell/.p10k.zsh $HOME/.p10k.zsh
 chmod +x $HOME/.dotfiles/shell/z.sh
 
 # Install Homebrew and some packages
-echo 'Install Homebrew'
-echo '----------------'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
