@@ -5,7 +5,6 @@
             "description": "Change left_control + h/j/k/l to arrows.",
             "manipulators": [
                 {
-                    "type": "basic",
                     "from": {
                         "key_code": "h",
                         "modifiers": {
@@ -21,10 +20,10 @@
                         {
                             "key_code": "left_arrow"
                         }
-                    ]
+                    ],
+                    "type": "basic"
                 },
                 {
-                    "type": "basic",
                     "from": {
                         "key_code": "j",
                         "modifiers": {
@@ -40,10 +39,10 @@
                         {
                             "key_code": "down_arrow"
                         }
-                    ]
+                    ],
+                    "type": "basic"
                 },
                 {
-                    "type": "basic",
                     "from": {
                         "key_code": "k",
                         "modifiers": {
@@ -59,10 +58,10 @@
                         {
                             "key_code": "up_arrow"
                         }
-                    ]
+                    ],
+                    "type": "basic"
                 },
                 {
-                    "type": "basic",
                     "from": {
                         "key_code": "l",
                         "modifiers": {
@@ -78,7 +77,8 @@
                         {
                             "key_code": "right_arrow"
                         }
-                    ]
+                    ],
+                    "type": "basic"
                 }
             ]
         }

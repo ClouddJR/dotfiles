@@ -1,8 +1,8 @@
 {
-	"title": "Change right_command to command+control+option+shift.",
+	"title": "Change right_command to hyper key.",
 	"rules": [
 		{
-			"description": "Change right_command to command+control+option+shift.",
+			"description": "Change right_command to hyper key.",
 			"manipulators": [
 				{
 					"from": {

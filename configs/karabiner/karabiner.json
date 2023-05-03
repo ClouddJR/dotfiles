@@ -146,7 +146,7 @@
                         ]
                     },
                     {
-                        "description": "Change right_command to command+control+option+shift.",
+                        "description": "Change right_command to hyper key.",
                         "manipulators": [
                             {
                                 "from": {
