@@ -25,9 +25,12 @@ rm $HOME/.config/fd/ignore
 mkdir -p $HOME/.config/fd/
 ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
 
+# Symlink p10k config
+rm $HOME/.p10k.zsh
+ln -s $HOME/.dotfiles/shell/.p10k.zsh $HOME/.p10k.zsh
+
 # Add exec permission for z
-cd ~/.dotfiles/shell
-chmod +x z.sh
+chmod +x $HOME/.dotfiles/shell/z.sh
 
 # Install Homebrew and some packages
 echo 'Install Homebrew'
@@ -37,6 +40,13 @@ echo '----------------'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install git
+
+# Clone zsh-autosuggestions and zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Clone Powerlevel10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 brew install pyenv
 
