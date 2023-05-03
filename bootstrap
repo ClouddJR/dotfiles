@@ -15,14 +15,14 @@ do
     case $reply in
         1)
             sudo -v
-            source ~/.dotfiles/terminal
+            source $HOME/.dotfiles/terminal
             ;;
         2)
-            source ~/.dotfiles/apps
+            source $HOME/.dotfiles/apps
             ;;
         3)
             sudo -v
-            source ~/.dotfiles/defaults
+            source $HOME/.dotfiles/defaults
             ;;
         0)
             break
