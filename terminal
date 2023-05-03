@@ -36,102 +36,54 @@ echo '----------------'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo 'Install git'
-echo '-----------'
 brew install git
 
-echo 'Install pyenv'
-echo '-------------'
 brew install pyenv
 
-echo 'Install java'
-echo '------------'
 brew install java
 sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-echo 'Install docker'
-echo '--------------'
 brew install docker
 
-echo 'Install php'
-echo '-----------'
 brew install php
 
-echo 'Install composer'
-echo '----------------'
 brew install composer
 
-echo 'Install node'
-echo '------------'
 brew install node
 
-echo 'Install mysql'
-echo '-------------'
 brew install mysql
 brew services start mysql
 
-echo 'Install wget'
-echo '------------'
 brew install wget
 
-echo 'Install tree'
-echo '------------'
 brew install tree
 
-echo 'Install trash'
-echo '-------------'
 brew install trash
 
-echo 'Install imagemagick'
-echo '-------------------'
 brew install imagemagick
 
-echo 'Install fzf'
-echo '-----------'
 brew install fzf
 
-echo 'Install bat'
-echo '-----------'
 brew install bat
 
-echo 'Install ripgrep'
-echo '---------------'
 brew install ripgrep
 
-echo 'Install fd'
-echo '----------'
 brew install fd
 
-echo 'Install jq'
-echo '----------'
 brew install jq
 
-echo 'Install gh'
-echo '----------'
 brew install gh
 
-echo 'Install gradle'
-echo '--------------'
 brew install gradle
 
-echo 'Install hugo'
-echo '------------'
 brew install hugo
 
-echo 'Install kotlin'
-echo '--------------'
 brew install kotlin
 
-echo 'Install mailhog'
-echo '---------------'
 brew install mailhog
 
-echo 'Install mitmproxy'
-echo '-----------------'
 brew install mitmproxy
 
-echo 'Install neovim'
-echo '--------------'
 brew install neovim
 
 echo '++++++++++++++++++++++++++++++'
