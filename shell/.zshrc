@@ -10,15 +10,12 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git gh adb macos laravel zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git gh adb macos laravel z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Required for Homebrew when using machines with Apple Silicon
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Active z
-. $HOME/.dotfiles/shell/z.sh
 
 # Activate vi mode
 bindkey -v

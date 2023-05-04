@@ -27,9 +27,6 @@ ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
 rm $HOME/.p10k.zsh
 ln -s $HOME/.dotfiles/shell/.p10k.zsh $HOME/.p10k.zsh
 
-# Add exec permission for z
-chmod +x $HOME/.dotfiles/shell/z.sh
-
 # Install Homebrew and some packages
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
