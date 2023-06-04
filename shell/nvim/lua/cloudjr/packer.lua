@@ -40,4 +40,5 @@ return require("packer").startup(function(use)
     use "tpope/vim-surround"
 
     use "nvim-tree/nvim-tree.lua"
+    use 'nvim-tree/nvim-web-devicons'
 end)
