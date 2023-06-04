@@ -3,18 +3,7 @@ return require("packer").startup(function(use)
 
     use "folke/tokyonight.nvim"
 
-    use {
-        "nvim-telescope/telescope.nvim", tag = "0.1.1",
-        requires = { { "nvim-lua/plenary.nvim" } }
-    }
-
     use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-
-    use "ThePrimeagen/harpoon"
-
-    use "mbbill/undotree"
-
-    use "tpope/vim-fugitive"
 
     use {
         "VonHeikemen/lsp-zero.nvim",
@@ -34,4 +23,15 @@ return require("packer").startup(function(use)
             { "L3MON4D3/LuaSnip" },
         }
     }
+
+    use {
+        "nvim-telescope/telescope.nvim", tag = "0.1.1",
+        requires = { { "nvim-lua/plenary.nvim" } }
+    }
+
+    use "ThePrimeagen/harpoon"
+
+    use "mbbill/undotree"
+
+    use "tpope/vim-fugitive"
 end)
