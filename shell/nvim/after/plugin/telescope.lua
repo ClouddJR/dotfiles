@@ -3,6 +3,9 @@ local lga_actions = require("telescope-live-grep-args.actions")
 local builtin = require("telescope.builtin")
 
 telescope.setup {
+    defaults = {
+        path_display = { "truncate" }
+    },
     extensions = {
         live_grep_args = {
             auto_quoting = true,
@@ -16,12 +19,13 @@ telescope.setup {
 }
 telescope.load_extension("live_grep_args")
 
-vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
+vim.keymap.set("n", "<leader>pf", builtin.find_files)
 vim.keymap.set("n", "<leader>pa", function()
     builtin.find_files({ hidden = true, prompt_title = "All Files" })
 end)
-vim.keymap.set("n", "<leader>pg", builtin.git_files, {})
-vim.keymap.set("n", "<leader>pb", builtin.buffers, {})
+vim.keymap.set("n", "<leader>pg", builtin.git_files)
+vim.keymap.set("n", "<leader>pb", builtin.buffers)
 vim.keymap.set("n", "<leader>ps", function()
     telescope.extensions.live_grep_args.live_grep_args()
 end)
+vim.keymap.set("n", "<leader>ph", builtin.help_tags)
