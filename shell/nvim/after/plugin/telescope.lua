@@ -11,7 +11,7 @@ telescope.setup {
             auto_quoting = true,
             mappings = {
                 i = {
-                    ["<C-u>"] = lga_actions.quote_prompt(),
+                    ["<C-i>"] = lga_actions.quote_prompt(),
                 },
             },
         }

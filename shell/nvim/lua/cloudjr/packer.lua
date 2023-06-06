@@ -45,9 +45,16 @@ return require("packer").startup(function(use)
 
     use "mbbill/undotree"
 
-    use "tpope/vim-fugitive"
+    use {
+        "tpope/vim-fugitive",
+        requires = {
+            { "tpope/vim-rhubarb" }
+        }
+    }
     use "tpope/vim-surround"
 
     use "nvim-tree/nvim-tree.lua"
-    use 'nvim-tree/nvim-web-devicons'
+    use "nvim-tree/nvim-web-devicons"
+
+    use "lewis6991/gitsigns.nvim"
 end)
