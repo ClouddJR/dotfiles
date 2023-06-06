@@ -1,4 +1,4 @@
-require("nvim-treesitter.configs").setup {
+require("nvim-treesitter.configs").setup({
     ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
     sync_install = false,
     auto_install = true,
@@ -6,4 +6,18 @@ require("nvim-treesitter.configs").setup {
         enable = true,
         additional_vim_regex_highlighting = false,
     },
-}
+    textobjects = {
+        select = {
+            enable = true,
+            lookahead = true,
+            keymaps = {
+                ['ia'] = '@parameter.inner',
+                ['aa'] = '@parameter.outer',
+                ["if"] = "@function.inner",
+                ["af"] = "@function.outer",
+                ["ic"] = "@class.inner",
+                ["ac"] = "@class.outer",
+            },
+        },
+    },
+})

@@ -3,7 +3,13 @@ return require("packer").startup(function(use)
 
     use "folke/tokyonight.nvim"
 
-    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+        requires = {
+            { "nvim-treesitter/nvim-treesitter-textobjects" }
+        }
+    }
 
     use {
         "VonHeikemen/lsp-zero.nvim",

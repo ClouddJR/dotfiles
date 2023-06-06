@@ -2,7 +2,7 @@ local telescope = require("telescope")
 local lga_actions = require("telescope-live-grep-args.actions")
 local builtin = require("telescope.builtin")
 
-telescope.setup {
+telescope.setup({
     defaults = {
         path_display = { "truncate" }
     },
@@ -16,7 +16,7 @@ telescope.setup {
             },
         }
     }
-}
+})
 telescope.load_extension("live_grep_args")
 
 vim.keymap.set("n", "<leader>pf", builtin.find_files)
