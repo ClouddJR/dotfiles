@@ -3,6 +3,8 @@ return require("packer").startup(function(use)
 
     use "folke/tokyonight.nvim"
 
+    use "nvim-lua/plenary.nvim"
+
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
@@ -24,6 +26,7 @@ return require("packer").startup(function(use)
                 end,
             },
             { "williamboman/mason-lspconfig.nvim" },
+            { "jose-elias-alvarez/null-ls.nvim" },
 
             --Autocompletion
             { "hrsh7th/nvim-cmp" },
@@ -42,7 +45,6 @@ return require("packer").startup(function(use)
         "nvim-telescope/telescope.nvim",
         tag = "0.1.1",
         requires = {
-            { "nvim-lua/plenary.nvim" },
             { "nvim-telescope/telescope-live-grep-args.nvim" },
         }
     }
