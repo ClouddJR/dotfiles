@@ -60,6 +60,7 @@ return require("packer").startup(function(use)
         }
     }
     use "tpope/vim-surround"
+    use "tpope/vim-repeat"
 
     use "nvim-tree/nvim-tree.lua"
     use "nvim-tree/nvim-web-devicons"
