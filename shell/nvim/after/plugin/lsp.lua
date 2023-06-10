@@ -27,7 +27,10 @@ cmp.setup({
 null_ls.setup({
     sources = {
         null_ls.builtins.diagnostics.flake8.with({
-            extra_args = { "--ignore", "E203,W503" },
+            extra_args = {
+                "--max-line-length", "88",
+                "--extend-ignore", "E203"
+            },
         }),
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
