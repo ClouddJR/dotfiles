@@ -21,7 +21,7 @@ telescope.load_extension("live_grep_args")
 
 vim.keymap.set("n", "<leader>pf", builtin.find_files)
 vim.keymap.set("n", "<leader>pa", function()
-    builtin.find_files({ hidden = true, prompt_title = "All Files" })
+    builtin.find_files({ hidden = true, no_ignore = true, prompt_title = "All Files" })
 end)
 vim.keymap.set("n", "<leader>pg", builtin.git_files)
 vim.keymap.set("n", "<leader>pb", builtin.buffers)
