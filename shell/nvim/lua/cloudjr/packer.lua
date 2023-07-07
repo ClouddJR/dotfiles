@@ -60,6 +60,8 @@ return require("packer").startup(function(use)
         }
     }
     use "tpope/vim-surround"
+    use "tpope/vim-unimpaired"
+    use "tpope/vim-commentary"
     use "tpope/vim-repeat"
 
     use "nvim-tree/nvim-tree.lua"
