@@ -49,6 +49,11 @@ return require("packer").startup(function(use)
         }
     }
 
+    use {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "make"
+    }
+
     use "ThePrimeagen/harpoon"
 
     use "mbbill/undotree"
