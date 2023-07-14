@@ -47,12 +47,11 @@ return require("packer").startup(function(use)
         tag = "0.1.1",
         requires = {
             { "nvim-telescope/telescope-live-grep-args.nvim" },
+            {
+                "nvim-telescope/telescope-fzf-native.nvim",
+                run = "make"
+            }
         }
-    }
-
-    use {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        run = "make"
     }
 
     use "ThePrimeagen/harpoon"
