@@ -17,6 +17,8 @@ vim.opt.wrap = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+vim.opt.wildmode = "longest:full,full"
+
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
