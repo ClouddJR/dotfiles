@@ -75,4 +75,6 @@ return require("packer").startup(function(use)
     use "lewis6991/gitsigns.nvim"
 
     use "folke/zen-mode.nvim"
+
+    use "vim-test/vim-test"
 end)
