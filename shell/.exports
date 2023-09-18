@@ -1,6 +1,10 @@
 # Set the language
 export LANG=en_US.UTF-8
 
+# Bigger history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+
 # Enable colored 'grep' output
 export GREP_OPTIONS="--color=auto"
 
