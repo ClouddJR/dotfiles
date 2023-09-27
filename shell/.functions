@@ -15,6 +15,10 @@ function ql() {
    quick-look "$1"
 }
 
+function c() {
+    $HOME/.dotfiles/shell/scripts/cht.sh "$@" | less
+}
+
 # 1. Search for text in files using ripgrep
 # 2. Interactively narrow down the list using fzf
 # 3. Open the file in nvim
