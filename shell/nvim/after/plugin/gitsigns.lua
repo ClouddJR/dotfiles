@@ -6,7 +6,7 @@ signs.setup({
 
         vim.keymap.set("n", "<leader>he", signs.preview_hunk, opts)
         vim.keymap.set("n", "<leader>hr", signs.reset_hunk, opts)
-        vim.keymap.set("n", "<leader>hn", signs.next_hunk, opts)
-        vim.keymap.set("n", "<leader>hp", signs.prev_hunk, opts)
+        vim.keymap.set("n", "]g", signs.next_hunk, opts)
+        vim.keymap.set("n", "[g", signs.prev_hunk, opts)
     end
 })
