@@ -23,6 +23,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Activate vi mode
 bindkey -v
 
+# Activate fzf
+[ -f $HOME/.dotfiles/shell/.fzf.zsh ] && source $HOME/.dotfiles/shell/.fzf.zsh
+
 # Load the shell dotfiles
 # $HOME/.dotfiles-custom can be used for other settings you don’t want to commit.
 for file in $HOME/.dotfiles/shell/.{exports,aliases,functions}; do
@@ -37,9 +40,6 @@ unset file
 
 # Setup pyenv
 eval "$(pyenv init -)"
-
-# Activate fzf
-[ -f $HOME/.dotfiles/shell/.fzf.zsh ] && source $HOME/.dotfiles/shell/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh

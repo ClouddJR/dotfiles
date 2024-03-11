@@ -51,5 +51,6 @@ bindkey -M viins '^G^B' fzf-global-cd-widget
 bindkey -M vicmd '^G^B' fzf-global-cd-widget
 
 # Add binding for fzf cd widget
+bindkey -r '^[c'
 bindkey -M viins '^B' fzf-cd-widget
 bindkey -M vicmd '^B' fzf-cd-widget
