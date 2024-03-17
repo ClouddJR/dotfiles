@@ -64,6 +64,13 @@ return {
                     },
                 },
             },
+            emmet_ls = {
+                filetypes = {
+                    "blade",
+                    "css",
+                    "html",
+                },
+            },
         }
 
         require("mason").setup()
@@ -75,6 +82,7 @@ return {
             "black",
             "isort",
             "stylua",
+            "emmet-ls",
             "phpactor",
             "pint",
             "rustywind",
