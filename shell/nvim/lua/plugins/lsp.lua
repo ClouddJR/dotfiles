@@ -75,6 +75,9 @@ return {
             "black",
             "isort",
             "stylua",
+            "phpactor",
+            "pint",
+            "rustywind",
         })
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -86,6 +89,10 @@ return {
                     require("lspconfig")[server_name].setup(server)
                 end,
             },
+        })
+
+        vim.diagnostic.config({
+            virtual_text = false,
         })
     end,
 }
