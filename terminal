@@ -18,7 +18,11 @@ ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 rm $HOME/.config/nvim
 ln -s $HOME/.dotfiles/shell/nvim $HOME/.config
 
-# Symlink karabiner config
+# Symlink IdeaVim prefs
+rm $HOME/.ideavimrc
+ln -s $HOME/.dotfiles/configs/.ideavimrc $HOME/.ideavimrc
+
+# Symlink Karabiner config
 rm $HOME/.config/karabiner
 ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config
 

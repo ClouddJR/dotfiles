@@ -1,0 +1,62 @@
+"""" Options
+let mapleader = " "
+
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set visualbell
+set scrolloff = 8
+
+"""" IdeaVim specific options
+set ideajoin
+
+"""" Plugins
+set surround
+set commentary
+set argtextobj
+set highlightedyank
+
+let g:argtextobj_pairs="[:],(:),<:>"
+
+"""" Keymaps
+nmap <Esc> :nohlsearch<CR>
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+
+map gD <Action>(GotoTypeDeclaration)
+map gi <Action>(GotoImplementation)
+map gu <Action>(GotoSuperMethod)
+
+map <leader>p <Action>(SearchEverywhere)
+map <leader>e <Action>(RecentFiles)
+map <leader>o <Action>(FileStructurePopup)
+map <leader>a <Action>(ShowIntentionActions)
+map <leader>f <Action>(ReformatCode)
+map <leader>t <Action>(Refactorings.QuickListPopupAction)
+map <leader>s <Action>(SelectInProjectView)
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>h <Action>(HideAllWindows)
+map <leader>m <Action>(OptimizeImports)
+map <leader>rn <Action>(RenameElement)
+
+map <leader><leader> <Action>(Run)
+map <leader>rc <Action>(RunClass)
+map <leader>rd <Action>(ChooseRunConfiguration)
+
+map <S-Space> <Action>(Debug)
+map <leader>dc <Action>(DebugClass)
+map <leader>dd <Action>(ChooseDebugConfiguration)
+
+map <leader>ga <Action>(Annotate)
+map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>gr <Action>(Vcs.RollbackChangedLines)
+map <leader>gR <Action>(ChangesView.Revert)
+
+map [e <Action>(GotoPreviousError)
+map ]e <Action>(GotoNextError)
+map [g <Action>(VcsShowPrevChangeMarker)
+map ]g <Action>(VcsShowNextChangeMarker)
