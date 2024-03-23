@@ -45,10 +45,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-$HO
 # Clone Powerlevel10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Clone packer.nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- $HOME/.local/share/nvim/site/pack/packer/start/packer.nvim
-
 brew install pyenv
 
 brew install java
@@ -89,11 +85,7 @@ brew install gradle
 
 brew install hugo
 
-brew install kotlin
-
 brew install mailhog
-
-brew install mitmproxy
 
 brew install neovim
 
