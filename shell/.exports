@@ -18,6 +18,9 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # Open the VS Code with a 'code' command
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Add a path for JetBrains Toolbox scripts
+export PATH="$PATH:$HOME/.jetbrainstoolbox"
+
 # Configuration for fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow"
 
