@@ -41,6 +41,7 @@ map <leader>s <Action>(SelectInProjectView)
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>h <Action>(HideAllWindows)
 map <leader>m <Action>(OptimizeImports)
+map <leader>w <Action>(WindowMenu)
 map <leader>rn <Action>(RenameElement)
 
 map <leader><leader> <Action>(Run)
