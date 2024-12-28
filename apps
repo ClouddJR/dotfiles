@@ -26,8 +26,6 @@ brew install --cask proxyman
 
 brew install --cask folx
 
-brew install --cask kap
-
 brew install --cask appcleaner
 
 brew install --cask spotify
