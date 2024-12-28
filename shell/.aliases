@@ -3,3 +3,5 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias afk="osascript -e 'tell application \"System Events\" to keystroke \"q\" using {command down,control down}'"
 
 alias v=nvim
+
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
