@@ -2045,7 +2045,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.5</real>
+			<real>1.3999999999999999</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2096,6 +2096,8 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
+	<false/>
+	<key>ShowMetalFPSmeter</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
