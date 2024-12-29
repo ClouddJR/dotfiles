@@ -43,3 +43,6 @@ eval "$(pyenv init -)"
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
+
+# Load iTerm2 shell integration script
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

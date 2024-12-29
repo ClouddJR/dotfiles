@@ -35,6 +35,10 @@ ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
 rm $HOME/.p10k.zsh
 ln -s $HOME/.dotfiles/shell/.p10k.zsh $HOME/.p10k.zsh
 
+# Symlink iTerm2 shell integration script
+rm $HOME/.iterm2_shell_integration.zsh
+ln -s $HOME/.dotfiles/shell/.iterm2_shell_integration.zsh $HOME/.iterm2_shell_integration.zsh
+
 # Install Homebrew and some packages
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

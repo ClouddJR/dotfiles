@@ -9,7 +9,9 @@
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoCommandHistory</key>
-	<true/>
+	<false/>
+	<key>AutoComposer</key>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>tokyonight_moon</key>
@@ -1053,17 +1055,6 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x6b-0x100000-0x28</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Label</key>
-			<string></string>
-			<key>Text</key>
-			<string>0x0c</string>
-			<key>Version</key>
-			<integer>1</integer>
-		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
@@ -1970,6 +1961,8 @@
 				<key>Red Component</key>
 				<real>0.30980392156862752</real>
 			</dict>
+			<key>Load Shell Integration Automatically</key>
+			<false/>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -2022,6 +2015,10 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
+			<key>Show Offscreen Command line</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>
