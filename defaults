@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Disable sound effects on boot
 sudo nvram StartupMute=%01
