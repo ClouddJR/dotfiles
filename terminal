@@ -10,6 +10,14 @@ curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/in
 rm $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
+# Symlink git config
+rm $HOME/.gitconfig
+ln -s $HOME/.dotfiles/shell/.gitconfig $HOME/.gitconfig
+
+# Symlink git ignore
+rm $HOME/.gitignore
+ln -s $HOME/.dotfiles/shell/.gitignore $HOME/.gitignore
+
 # Symlink vim prefs
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
