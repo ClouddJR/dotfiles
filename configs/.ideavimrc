@@ -8,7 +8,8 @@ set smartcase
 set incsearch
 set hlsearch
 set visualbell
-set scrolloff = 8
+set scrolloff=8
+set guicursor=a:block
 
 """" IdeaVim specific options
 set ideajoin
@@ -19,7 +20,7 @@ set commentary
 set argtextobj
 set highlightedyank
 
-let g:argtextobj_pairs="[:],(:),<:>"
+let g:argtextobj_pairs="[:],(:),<:>,{:}"
 
 """" Keymaps
 nmap <Esc> :nohlsearch<CR>
