@@ -105,6 +105,8 @@ brew install mailhog
 
 brew install neovim
 
+brew install btop
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
