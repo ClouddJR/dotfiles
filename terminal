@@ -63,6 +63,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 brew install pyenv
 
+brew install rbenv
+
 brew install java
 sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
@@ -112,3 +114,4 @@ echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
 echo 'Additional things to do:'
 echo ' 1. Install pyenv latest version by running pyenv install _version_ and then pyenv global _version_'
+echo ' 2. Install rbenv latest version by running rbenv install _version_ and then rbenv global _version_'

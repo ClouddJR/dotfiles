@@ -41,6 +41,9 @@ unset file
 # Setup pyenv
 eval "$(pyenv init -)"
 
+# Setup rbenv
+eval "$(rbenv init - --no-rehash zsh)"
+
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 

@@ -1514,6 +1514,8 @@
 			<integer>207</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Composer Top Offset</key>
+			<real>308.390625</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1892,7 +1894,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowMetalFPSmeter</key>
 	<false/>
 	<key>Size Changes Affect Profile</key>
@@ -1910,6 +1912,7 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Snippets</string>
+		<string>Command History</string>
 	</array>
 	<key>UseBorder</key>
 	<false/>
