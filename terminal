@@ -61,6 +61,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-$HO
 # Clone Powerlevel10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# Install nvm
+git clone https://github.com/lukechilds/zsh-nvm.git $HOME/.zsh-nvm
+
 brew install pyenv
 
 brew install rbenv
@@ -73,8 +76,6 @@ brew install docker
 brew install php
 
 brew install composer
-
-brew install node
 
 brew install mysql
 brew services start mysql
@@ -115,3 +116,4 @@ echo 'All done!'
 echo 'Additional things to do:'
 echo ' 1. Install pyenv latest version by running pyenv install _version_ and then pyenv global _version_'
 echo ' 2. Install rbenv latest version by running rbenv install _version_ and then rbenv global _version_'
+echo ' 3. Install nvm latest version by running nvm install node'
