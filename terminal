@@ -77,9 +77,6 @@ brew install php
 
 brew install composer
 
-brew install mysql
-brew services start mysql
-
 brew install wget
 
 brew install tree
@@ -103,8 +100,6 @@ brew install gh
 brew install gradle
 
 brew install hugo
-
-brew install mailhog
 
 brew install neovim
 

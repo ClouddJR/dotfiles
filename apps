@@ -24,13 +24,9 @@ brew install --cask tableplus
 
 brew install --cask proxyman
 
-brew install --cask folx
-
 brew install --cask appcleaner
 
 brew install --cask spotify
-
-brew install --cask disk-inventory-x
 
 brew install --cask imageoptim
 
