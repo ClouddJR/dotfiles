@@ -28,6 +28,8 @@ nmap <Esc> :nohlsearch<CR>
 map <C-o> <Action>(Back)
 map <C-i> <Action>(Forward)
 
+xmap v <Action>(EditorSelectWord)
+
 map gD <Action>(GotoTypeDeclaration)
 map gi <Action>(GotoImplementation)
 map gu <Action>(GotoSuperMethod)
