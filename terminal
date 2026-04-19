@@ -71,8 +71,6 @@ brew install rbenv
 brew install java
 sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-brew install docker
-
 brew install php
 
 brew install composer
