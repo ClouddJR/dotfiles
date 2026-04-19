@@ -4,22 +4,24 @@
 touch $HOME/.hushlogin
 
 # Install oh-my-zsh
-curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+fi
 
 # Symlink zsh prefs
-rm $HOME/.zshrc
+rm -f $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
 # Symlink git config
-rm $HOME/.gitconfig
+rm -f $HOME/.gitconfig
 ln -s $HOME/.dotfiles/shell/.gitconfig $HOME/.gitconfig
 
 # Symlink git ignore
-rm $HOME/.gitignore
+rm -f $HOME/.gitignore
 ln -s $HOME/.dotfiles/shell/.gitignore $HOME/.gitignore
 
 # Symlink vim prefs
-rm $HOME/.vimrc
+rm -f $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
 # Symlink nvim prefs
@@ -28,7 +30,7 @@ mkdir -p $HOME/.config
 ln -s $HOME/.dotfiles/shell/nvim $HOME/.config/nvim
 
 # Symlink IdeaVim prefs
-rm $HOME/.ideavimrc
+rm -f $HOME/.ideavimrc
 ln -s $HOME/.dotfiles/configs/.ideavimrc $HOME/.ideavimrc
 
 # Symlink Karabiner config
@@ -42,29 +44,32 @@ rm -f $HOME/.config/fd/ignore
 ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
 
 # Symlink p10k config
-rm $HOME/.p10k.zsh
+rm -f $HOME/.p10k.zsh
 ln -s $HOME/.dotfiles/shell/.p10k.zsh $HOME/.p10k.zsh
 
 # Symlink iTerm2 shell integration script
-rm $HOME/.iterm2_shell_integration.zsh
+rm -f $HOME/.iterm2_shell_integration.zsh
 ln -s $HOME/.dotfiles/shell/.iterm2_shell_integration.zsh $HOME/.iterm2_shell_integration.zsh
 
 # Install Homebrew and some packages
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew &> /dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install git
 
 # Clone zsh-autosuggestions and zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+ZSH_CUSTOM_DIR=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
+[ ! -d "$ZSH_CUSTOM_DIR/plugins/zsh-autosuggestions" ] && git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM_DIR/plugins/zsh-autosuggestions"
+[ ! -d "$ZSH_CUSTOM_DIR/plugins/zsh-syntax-highlighting" ] && git clone https://github.com/zsh-users/zsh-syntax-highlighting "$ZSH_CUSTOM_DIR/plugins/zsh-syntax-highlighting"
 
 # Clone Powerlevel10k theme
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+[ ! -d "$ZSH_CUSTOM_DIR/themes/powerlevel10k" ] && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM_DIR/themes/powerlevel10k"
 
 # Install nvm
-git clone https://github.com/lukechilds/zsh-nvm.git $HOME/.zsh-nvm
+[ ! -d "$HOME/.zsh-nvm" ] && git clone https://github.com/lukechilds/zsh-nvm.git $HOME/.zsh-nvm
 
 brew install pyenv
 
