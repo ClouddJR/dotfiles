@@ -23,20 +23,22 @@ rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
 
 # Symlink nvim prefs
-rm $HOME/.config/nvim
-ln -s $HOME/.dotfiles/shell/nvim $HOME/.config
+rm -rf $HOME/.config/nvim
+mkdir -p $HOME/.config
+ln -s $HOME/.dotfiles/shell/nvim $HOME/.config/nvim
 
 # Symlink IdeaVim prefs
 rm $HOME/.ideavimrc
 ln -s $HOME/.dotfiles/configs/.ideavimrc $HOME/.ideavimrc
 
 # Symlink Karabiner config
-rm $HOME/.config/karabiner
-ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config
+rm -rf $HOME/.config/karabiner
+mkdir -p $HOME/.config
+ln -s $HOME/.dotfiles/configs/karabiner $HOME/.config/karabiner
 
 # Symlink global fd ignore file
-rm $HOME/.config/fd/ignore
-mkdir -p $HOME/.config/fd/
+mkdir -p $HOME/.config/fd
+rm -f $HOME/.config/fd/ignore
 ln -s $HOME/.dotfiles/configs/.fdignore $HOME/.config/fd/ignore
 
 # Symlink p10k config
